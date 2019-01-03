@@ -1,0 +1,35 @@
+{
+    "name": "snipjs",
+    "author": {
+        "name": "Dimitar Dyakov",
+        "email": "dimitar.dyakov98@gmail.com",
+        "url": "https://www.linkedin.com/in/ddyakov/"
+    },
+    "keywords": ["javascript", "snippets", "vscode"],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/mdyakov/SnipJS"
+    },
+    "displayName": "SnipJS",
+    "description": "Common javascript statement snippets.",
+    "version": "1.0.0",
+    "icon": "logo.png",
+    "engines": {
+        "vscode": "^1.30.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "javascript",
+                "path": "./snippets/snippets.json"
+            },
+            {
+                "language": "typescript",
+                "path": "./snippets/snippets.json"
+            }
+        ]
+    }
+}

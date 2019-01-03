@@ -1,0 +1,110 @@
+{
+    "Let assignment": {
+        "prefix": "la",
+        "body": "let ${1:name} = ${2:value}"
+    },
+    "Var assignment": {
+        "prefix": "va",
+        "body": "var ${1:name} = ${2:value}"
+    },
+    "Const assignment": {
+        "prefix": "ca",
+        "body": "const ${1:name} = ${2:value}"
+    },
+    "Object assignment": {
+        "prefix": "oa",
+        "body": [
+            "let ${1:obj} = {",
+            "   \"${2:key}\": ${3:value}",
+            "}"
+        ]
+    },
+    "Array assignment": {
+        "prefix": "aa",
+        "body": "let ${1:name} = [${2:value1}, ${3:value2}]"
+    },
+    "Object destructuring": {
+        "prefix": "od",
+        "body": "const { ${1:name} } = ${2:value}"
+    },
+    "Console log": {
+        "prefix": "cl",
+        "body": "console.log(${1:value})"
+    },
+    "Arrow function": {
+        "prefix": "af",
+        "body": "const ${1:name} = (${2:param}) => {\n\t${0}\n}"
+    },
+    "Named function": {
+        "prefix": "nf",
+        "body": "function ${1:name} (${2:param}) {\n\t${0}\n}"
+    },
+    "And condition": {
+        "prefix": "ac",
+        "body": "${1:condition1} && ${2:condition2}"
+    },
+    "Or condition": {
+        "prefix": "oc",
+        "body": "${1:condition1} || ${2:condition2}"
+    },
+    "Condition operator": {
+        "prefix": "co",
+        "body": "let ${1:name} = ${2:condition} ? ${3:value1} : ${4:value2}"
+    },
+    "Length validation": {
+        "prefix": "lv",
+        "body": "${1:value}.length === ${2:0}"
+    },
+    "Null validation": {
+        "prefix": "nv",
+        "body": "${1:value} === null"
+    },
+    "Not null validation": {
+        "prefix": "nnv",
+        "body": "${1:value} !== null"
+    },
+    "Undefined validation": {
+        "prefix": "uv",
+        "body": "typeof ${1:value} === \"undefined\""
+    },
+    "Contains validation": {
+        "prefix": "cv",
+        "body": "${1:value}.indexOf(${2:value2}) > -1"
+    },
+    "Doesn't contain validation": {
+        "prefix": "dcv",
+        "body": "${1:value}.indexOf(${2:value2}) === -1"
+    },
+    "Not undefined validation": {
+        "prefix": "nuv",
+        "body": "typeof ${1:value} !== \"undefined\""
+    },
+    "Add event listener": {
+        "prefix": "ael",
+        "body": "document.addEventListener(\"${1:event}\", (${2:param}) => {\n\t${0}\n})"
+    },
+    "Remove event listener": {
+        "prefix": "rel",
+        "body": "document.removeEventListener(\"${1:event}\", (${2:param}) => {\n\t${0}\n});"
+    },
+    "Create element": {
+        "prefix": "ce",
+        "body": "document.createElement(\"${1:element}\")"
+    },
+    "Get element by id": {
+        "prefix": "gei",
+        "body": "document.getElementById(\"${1:id}\")"
+    },
+    "Get element by class name": {
+        "prefix": "gec",
+        "body": "document.getElementsByClassName(\"${1:className}\")"
+    },
+    "Query selector": {
+        "prefix": "qs",
+        "body": "document.querySelector(\"${1:selector}\")"
+    },
+    "Query selector all": {
+        "prefix": "qsa",
+        "body": "document.querySelectorAll(\"${1:selector}\")"
+    }
+}
