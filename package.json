@@ -5,6 +5,7 @@
         "email": "dimitar.dyakov98@gmail.com",
         "url": "https://www.linkedin.com/in/ddyakov/"
     },
+    "publisher": "ddyakov",
     "keywords": ["javascript", "snippets", "vscode"],
     "repository": {
         "type": "git",
