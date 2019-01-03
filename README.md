@@ -207,11 +207,11 @@ console.log(${1:value})
 
 ## Questions, problems or something else?
 
-### There is a bug? Leave an issue on the [issues](https://github.com/mdyakov/SnipJS/issues) page or send a [pull request](https://github.com/mdyakov/SnipJS/pulls) with new features.
+##### There is a bug? Leave an issue on the [issues](https://github.com/mdyakov/SnipJS/issues) page or send a [pull request](https://github.com/mdyakov/SnipJS/pulls) with new features.
 
-### For questions, do not hesitate to write me an email - *dimitar.dyakov98@gmail.com*
+##### For questions, do not hesitate to write me an email - *dimitar.dyakov98@gmail.com*
 
-### Leave a star if you like and find the snippets helpful!
+##### Leave a star if you like and find the snippets helpful!
 
 *** 
 
