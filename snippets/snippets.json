@@ -85,7 +85,7 @@
     },
     "Remove event listener": {
         "prefix": "rel",
-        "body": "document.removeEventListener(\"${1:event}\", (${2:param}) => {\n\t${0}\n});"
+        "body": "document.removeEventListener(\"${1:event}\", (${2:param}) => {\n\t${0}\n})"
     },
     "Create element": {
         "prefix": "ce",
@@ -97,7 +97,7 @@
     },
     "Get element by class name": {
         "prefix": "gec",
-        "body": "document.getElementsByClassName(\"${1:className}\")"
+        "body": "document.getElementsByClassName(\"${1:class}\")"
     },
     "Query selector": {
         "prefix": "qs",
