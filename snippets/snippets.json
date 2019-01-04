@@ -108,7 +108,7 @@
         },
         "Instance of validation": {
             "prefix": "iov",
-            "body": "${1:value} instanceof ${2:value2}"
+            "body": "${1:value1} instanceof ${2:value2}"
         },
         "Array validation": {
             "prefix": "av", 
@@ -120,11 +120,11 @@
         },
         "Contains validation": {
             "prefix": "cv",
-            "body": "${1:value}.indexOf(${2:value2}) > -1"
+            "body": "${1:value1}.indexOf(${2:value2}) > -1"
         },
         "Doesn't contain validation": {
             "prefix": "dcv",
-            "body": "${1:value}.indexOf(${2:value2}) === -1"
+            "body": "${1:value1}.indexOf(${2:value2}) === -1"
         }
     },
     "DOM manipulations": {
