@@ -159,7 +159,7 @@ document.removeEventListener("${1:event}", (${2:param}) => {
 })
 ```
 
-#### `ce =>` create element
+#### `cel =>` create element
 
 ```js
 document.createElement("${1:element}")
@@ -196,7 +196,7 @@ document.querySelectorAll("${1:selector}")
 #### `od =>` object destructuring
 
 ```js
-const { ${1:name} } = ${2:value}
+let { ${1:name} } = ${2:value}
 ```
 
 #### `cl =>` console log

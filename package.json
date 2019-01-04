@@ -6,7 +6,11 @@
         "url": "https://www.linkedin.com/in/ddyakov/"
     },
     "publisher": "ddyakov",
-    "keywords": ["javascript", "snippets", "vscode"],
+    "keywords": [
+        "javascript",
+        "snippets",
+        "vscode"
+    ],
     "repository": {
         "type": "git",
         "url": "https://github.com/mdyakov/SnipJS"
