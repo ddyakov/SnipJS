@@ -204,7 +204,7 @@
         },
         "Placeholder": {
             "prefix": "ph1",
-            "body": "`${${1:value1}}`"
+            "body": "`${${1:value}}`"
         },
         "Placeholder2": {
             "prefix": "ph2",

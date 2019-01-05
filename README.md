@@ -2,9 +2,11 @@
 
 ![alt text](https://github.com/mdyakov/SnipJS/blob/master/logo.png "SnipJS logo")
 
-### A collection of common javascript statement snippets for faster development in [Visual Studio Code](https://code.visualstudio.com/).
+## A collection of common javascript statement snippets for faster development in [Visual Studio Code](https://code.visualstudio.com/).
 
-#### Feel free to install the extension from VS Code or from [here](https://marketplace.visualstudio.com/items?itemName=ddyakov.snipjs).
+### Feel free to install the extension from VS Code or from [here](https://marketplace.visualstudio.com/items?itemName=ddyakov.snipjs).
+
+### See the [demo](#demo).
 
 ***
 
@@ -13,6 +15,8 @@
 * [Conditions](#conditions)
 * [Validations](#validations)
 * [DOM manipulations](#dom-manipulations)
+* [Console](#console)
+* [Destructuring](#destructuring)
 * [Others](#others)
 
 ***
@@ -46,7 +50,7 @@ let ${1:name} = [${2:value1}, ${3:value2}]
 #### `oa =>` object assignment
 
 ```js
- let ${1:obj} = {
+ let ${1:name} = {
      "${2:key}": ${3:value}
  }
 ```
@@ -75,16 +79,52 @@ function ${1:name} (${2:param}) {
 
 ## Conditions
 
-#### `ac =>` and condition
+#### `ec =>` equal condition
 
 ```js
-${1:condition1} && ${2:condition2}
+${1:value1} === ${2:value2}
+```
+
+#### `nec =>` not equal condition
+
+```js
+${1:value1} !== ${2:value2}
+```
+
+#### `gtc =>` greater than condition
+
+```js
+${1:value1} > ${2:value2}
+```
+
+#### `ltc =>` less than condition
+
+```js
+${1:value1} < ${2:value2}
+```
+
+#### `getc =>` greater equal than condition
+
+```js
+${1:value1} >= ${2:value2}
+```
+
+#### `letc =>` less equal than condition
+
+```js
+${1:value1} <= ${2:value2}
 ```
 
 #### `oc =>` or condition
 
 ```js
 ${1:condition1} || ${2:condition2}
+```
+
+#### `ac =>` and condition
+
+```js
+${1:condition1} && ${2:condition2}
 ```
 
 #### `co =>` condition operator
@@ -97,10 +137,28 @@ let ${1:name} = ${2:condition} ? ${3:value1} : ${4:value2}
 
 ## Validations
 
-#### `lv =>` length validation
+#### `zlv =>` zero length validation
 
 ```js
-${1:value}.length === ${2:0}
+${1:value}.length === 0
+```
+
+#### `plv =>` positive length validation
+
+```js
+${1:value}.length > 0
+```
+
+#### `esv =>` empty string validation
+
+```js
+${1:value} === ""
+```
+
+#### `nesv =>` not empty string validation
+
+```js
+${1:value} !== ""
 ```
 
 #### `nv =>` null validation
@@ -127,16 +185,34 @@ typeof ${1:value} === "undefined"
 typeof ${1:value} !== "undefined"
 ```
 
+#### `iov =>` instance of validation
+
+```js
+${1:value1} instanceof ${2:value2}
+```
+
+#### `av =>` array validation
+
+```js
+Array.isArray(${1:value}) || ${1:value}.length
+```
+
+#### `ov =>` object validation
+
+```js
+Object.keys(${1:value}).length === 0 && ${1:value}.constructor === Object
+```
+
 #### `cv =>` contains validation
 
 ```js
-${1:value}.indexOf(${2:value2}) > -1
+${1:value1}.indexOf(${2:value2}) > -1
 ```
 
 #### `dcv =>` doesn't contain validation
 
 ```js
-${1:value}.indexOf(${2:value2}) === -1
+${1:value1}.indexOf(${2:value2}) === -1
 ```
 
 ***
@@ -162,47 +238,213 @@ document.removeEventListener("${1:event}", (${2:param}) => {
 #### `cel =>` create element
 
 ```js
-document.createElement("${1:element}")
+document.createElement("${1:value}")
+```
+
+#### `ach =>` append child
+
+```js
+document.appendChild("${1:value}")
+```
+
+#### `rch =>` remove child
+
+```js
+document.removeChild("${1:value}")
 ```
 
 #### `gei =>` get element by id
 
 ```js
-document.getElementById("${1:id}")
+document.getElementById("${1:value}")
 ```
 
 #### `gec =>` get element by class name
 
 ```js
-document.getElementsByClassName("${1:class}")
+document.getElementsByClassName("${1:value}")
+```
+
+#### `get =>` get element by tag name
+
+```js
+document.getElementsByTagName("${1:value}")
 ```
 
 #### `qs =>` query selector
 
 ```js
-document.querySelector("${1:selector}")
+document.querySelector("${1:value}")
 ```
 
 #### `qsa =>` query selector all
 
 ```js
-document.querySelectorAll("${1:selector}")
+document.querySelectorAll("${1:value}")
+```
+
+***
+
+## Console
+
+#### `cl =>` console log
+
+```js
+console.log(${1:value})
+```
+
+#### `cw =>` console warn
+
+```js
+console.warn(${1:value})
+```
+
+#### `ce =>` console error
+
+```js
+console.error(${1:value})
+```
+
+***
+
+## Destructuring
+
+#### `od =>` object destructuring
+
+```js
+let { ${1:value1} } = ${2:value2}
+```
+
+#### `ad =>` array destructuring
+
+```js
+let [${1:value1}, ${2:value2}] = ${3:value3}
 ```
 
 ***
 
 ## Others
 
-#### `od =>` object destructuring
+#### `rbt =>` react bind this
 
 ```js
-let { ${1:name} } = ${2:value}
+this.${1:name} = this.${1:name}.bind(this)
 ```
 
-#### `cl =>` console log
+#### `car =>` clone array
 
 ```js
-console.log(${1:value})
+let ${1:name} = ...${2:value}
+```
+
+#### `ph1 =>` placeholder 1
+
+```js
+`${${1:value}}`
+```
+
+#### `ph2 =>` placeholder 2
+
+```js
+`${${1:value1}} ${${2:value2}}`
+```
+
+#### `ph3 =>` placeholder 3
+
+```js
+`${${1:value1}} ${${2:value2}} ${${3:value3}}`
+```
+
+***
+
+## Demo
+
+#### These are the results after executing each and every snippet from the collection.
+
+```js
+// Assignments
+
+let name = value // la
+var name = value // va
+const name = value // ca
+let name = { // oa
+   "key": value
+}
+let name = [value1, value2] // aa
+
+// Functions
+
+const name = (param) => { // af
+    
+}
+function name (param) { // nf
+    
+}
+
+// Conditions 
+
+value1 === value2 // ec
+value1 !== value2 // nec
+value1 > value2 // gtc
+value1 < value2 // ltc
+value1 >= value2 // getc
+value1 <= value2 // letc
+condition1 || condition2 // oc
+condition1 && condition2 // ac
+let name = condition ? value1 : value2 // co
+
+// Validations
+
+value.length === 0 // zlv
+value.length > 0 // plv
+value === "" // esv
+value !== "" // nesv
+value === null // nv
+value !== null // nnv
+typeof value === "undefined" // uv
+typeof value !== "undefined" // nuv
+value1 instanceof value2 // iov
+Array.isArray(value) || value.length // av
+Object.keys(value).length === 0 && value.constructor === Object // ov
+value1.indexOf(value2) > -1 // cv
+value1.indexOf(value2) === -1 // dcv
+
+// DOM manipulations
+
+document.addEventListener("event", (param) => { // ael
+    
+})
+document.removeEventListener("event", (param) => { // rel
+    
+})
+document.createElement("value") // cel
+document.appendChild("value") // ach
+document.removeChild("value") // rch
+document.getElementById("value") // gei
+document.getElementsByClassName("value") // gec
+document.getElementsByTagName("value") // get
+document.querySelector("value") // qs
+document.querySelectorAll("value") // qsa
+
+// Console 
+
+console.log(value) // cl
+console.warn(value) // cw
+console.error(value) // ce
+
+// Destructuring
+
+let { value1 } = value2 // od
+let [value1, value2] = value3 // ad
+
+// Others 
+
+// Specially for ReactJS developers
+this.name = this.name.bind(this) // rbt
+let name = ...value // car
+`${value}` // ph1
+`${value1} ${value2}` // ph2
+`${value1} ${value2} ${value3}` // ph3
 ```
 
 ***
