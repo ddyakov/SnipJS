@@ -1,5 +1,6 @@
 {
     "name": "snipjs",
+    publisher: "ddyakov",
     "author": {
         "name": "Dimitar Dyakov",
         "email": "dimitar.dyakov98@gmail.com",
@@ -17,8 +18,7 @@
     },
     "displayName": "SnipJS",
     "description": "Common javascript statement snippets.",
-    "version": "1.0.1",
-    "icon": "logo.png",
+    "version": "1.0.2",
     "engines": {
         "vscode": "^1.30.0"
     },
