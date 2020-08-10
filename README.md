@@ -1,7 +1,5 @@
 # SnipJS 
 
-![alt text](https://github.com/mdyakov/SnipJS/blob/master/logo.png "SnipJS logo")
-
 ## A collection of common javascript statement snippets for faster development in [Visual Studio Code](https://code.visualstudio.com/).
 
 ### Feel free to install the extension from VS Code or from [here](https://marketplace.visualstudio.com/items?itemName=ddyakov.snipjs).
